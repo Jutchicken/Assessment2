@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750892432256",
+    "project_id": "mobdevassessment2",
+    "storage_bucket": "mobdevassessment2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750892432256:android:227d08134285d5aa391f65",
+        "android_client_info": {
+          "package_name": "com.example.assessment2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKLTYPtlHVW5NGqM_hZgZAcGbXT3wCPbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
