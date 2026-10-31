@@ -83,67 +83,48 @@ public class Login extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(),
                                                 "User role not found",
                                                 Toast.LENGTH_SHORT).show();
-
                                         mAuth.signOut();
                                         return;
                                     }
 
                                     if (role.equalsIgnoreCase("Admin")) {
-
-                                        intent = new Intent(
-                                                getApplicationContext(),
+                                        intent = new Intent(getApplicationContext(),
                                                 Food.class
                                         );
+                                    }
+                                    else if (role.equalsIgnoreCase("Player")) {
 
-                                    } else if (role.equalsIgnoreCase("Player")) {
-
-                                        intent = new Intent(
-                                                getApplicationContext(),
+                                        intent = new Intent(getApplicationContext(),
                                                 Food.class
                                         );
-
-                                    } else {
-
-                                        Toast.makeText(
-                                                getApplicationContext(),
+                                    }
+                                    else {
+                                        Toast.makeText(getApplicationContext(),
                                                 "Invalid user role",
-                                                Toast.LENGTH_SHORT
-                                        ).show();
-
+                                                Toast.LENGTH_SHORT).show();
                                         mAuth.signOut();
                                         return;
                                     }
-
-                                    Toast.makeText(
-                                            getApplicationContext(),
+                                    Toast.makeText(getApplicationContext(),
                                             "Login Successful",
-                                            Toast.LENGTH_SHORT
-                                    ).show();
-
+                                            Toast.LENGTH_SHORT).show();
                                     startActivity(intent);
                                     finish();
-
                                 })
                                 .addOnFailureListener(e -> {
-
-                                    Toast.makeText(
-                                            getApplicationContext(),
+                                    Toast.makeText(getApplicationContext(),
                                             "Database Error: " + e.getMessage(),
-                                            Toast.LENGTH_LONG
-                                    ).show();
-
+                                            Toast.LENGTH_LONG).show();
                                     mAuth.signOut();
                                 });
 
-                    } else {
-
-                        Toast.makeText(
-                                getApplicationContext(),
-                                "Wrong Email or Password",
-                                Toast.LENGTH_SHORT
-                        ).show();
                     }
-                });
+            else {
+                Toast.makeText(getApplicationContext(),
+                        "Wrong Email or Password",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void btnRegister(View view) {
