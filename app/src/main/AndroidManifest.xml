@@ -53,6 +53,10 @@
             android:name="Project.A_CreateTournament"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.A_ManageTournament"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

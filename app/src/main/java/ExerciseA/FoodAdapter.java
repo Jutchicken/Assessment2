@@ -40,18 +40,13 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodHolder> {
 
         holder.tvFoodName.setText(food.getName());
         holder.tvFoodCategory.setText(food.getCategory());
-        holder.tvFoodPrice.setText(
-                String.format(Locale.getDefault(), "$%.2f", food.getPrice())
-        );
-
+        holder.tvFoodPrice.setText(String.format(Locale.getDefault(), "$%.2f", food.getPrice()));
         holder.tvFoodDescription.setText(food.getDescription());
-
         holder.btnEdit.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onEdit(food);
             }
         });
-
         holder.btnDelete.setOnClickListener(v -> {
             if (listener != null) {
                 listener.onDelete(food);

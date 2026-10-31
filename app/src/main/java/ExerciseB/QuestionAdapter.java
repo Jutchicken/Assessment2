@@ -22,10 +22,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionHolder> {
 
     @NonNull
     @Override
-    public QuestionHolder onCreateViewHolder(
-            @NonNull ViewGroup parent,
-            int viewType
-    ) {
+    public QuestionHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.eb_question_item, parent, false);
 
@@ -33,20 +30,14 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull QuestionHolder holder, int position
-    ) {
+    public void onBindViewHolder(@NonNull QuestionHolder holder, int position) {
         QuestionItem question = items.get(position);
 
         holder.tvQuestionNumber.setText("Question " + (position + 1));
-
         holder.tvQuestionCategory.setText("Category: " + decodeHtml(question.getCategory()));
-
         holder.tvQuestionDifficulty.setText("Difficulty: " + question.getDifficulty());
-
         holder.tvQuestionType.setText("Type: " + question.getType());
-
         holder.tvQuestion.setText(decodeHtml(question.getQuestion()));
-
         holder.tvCorrectAnswer.setText("Correct Answer: " + decodeHtml(question.getCorrectAnswer()));
     }
 

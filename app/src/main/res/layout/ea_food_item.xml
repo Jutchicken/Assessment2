@@ -19,8 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Food Name"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#222222" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tv_foodCategory"
@@ -28,8 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="Category"
-            android:textSize="14sp"
-            android:textColor="#666666" />
+            android:textSize="14sp"/>
 
         <TextView
             android:id="@+id/tv_foodPrice"
@@ -38,8 +36,7 @@
             android:layout_marginTop="6dp"
             android:text="$12.50"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#2E7D32" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tv_foodDescription"
@@ -47,8 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="Food Description"
-            android:textSize="14sp"
-            android:textColor="#555555" />
+            android:textSize="14sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,14 +57,13 @@
                 android:id="@+id/btn_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit"
-                android:layout_marginEnd="8dp" />
+                android:text="Edit"/>
 
             <Button
                 android:id="@+id/btn_delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delete" />
+                android:text="Delete"/>
 
         </LinearLayout>
 
