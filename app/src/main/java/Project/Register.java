@@ -3,7 +3,9 @@ package Project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -25,6 +27,11 @@ public class Register extends AppCompatActivity {
     EditText etFullName, etEmail, etPassword, etConfirmPassword;
     FirebaseAuth mAuth;
     FirebaseFirestore database;
+    Spinner spRole;
+    String[] roles = {
+            "Player",
+            "Admin"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +52,19 @@ public class Register extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseFirestore.getInstance();
+
+        spRole = findViewById(R.id.sp_role);
+
+        ArrayAdapter<String> roleAdapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item,
+                roles
+        );
+
+        roleAdapter.setDropDownViewResource(
+                android.R.layout.simple_spinner_dropdown_item
+        );
+
+        spRole.setAdapter(roleAdapter);
     }
 
     public void btnRegister(View view) {
@@ -90,7 +110,8 @@ public class Register extends AppCompatActivity {
 
                 user.put("fullName", fullName);
                 user.put("email", email);
-                user.put("role", "Player");
+                String role = spRole.getSelectedItem().toString();
+                user.put("role", role);
 
                 database.collection("users")
                         .document(uid)

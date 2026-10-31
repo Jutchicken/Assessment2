@@ -89,13 +89,12 @@ public class Login extends AppCompatActivity {
 
                                     if (role.equalsIgnoreCase("Admin")) {
                                         intent = new Intent(getApplicationContext(),
-                                                Food.class
+                                                A_MainPage.class
                                         );
                                     }
                                     else if (role.equalsIgnoreCase("Player")) {
-
                                         intent = new Intent(getApplicationContext(),
-                                                Food.class
+                                                P_MainPage.class
                                         );
                                     }
                                     else {
@@ -128,5 +127,8 @@ public class Login extends AppCompatActivity {
     }
 
     public void btnRegister(View view) {
+        intent = new Intent(getApplicationContext(),
+                Register.class);
+        startActivity(intent);
     }
 }

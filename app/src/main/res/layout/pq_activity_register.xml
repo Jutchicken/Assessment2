@@ -29,6 +29,12 @@
             android:gravity="center"
             android:layout_marginBottom="32dp"/>
 
+        <Spinner
+            android:id="@+id/sp_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
         <EditText
             android:id="@+id/et_fullName"
             android:layout_width="match_parent"

@@ -35,6 +35,10 @@ public class A_MainPage extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),
                 "Create Tournament",
                 Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(getApplicationContext(),
+                A_CreateTournament.class);
+        startActivity(intent);
     }
 
     public void btnManageTournament(View view) {
