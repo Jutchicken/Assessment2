@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import ExerciseA.Food;
+import ExerciseB.Question;
 
 public class Main extends AppCompatActivity {
 
@@ -34,6 +35,12 @@ public class Main extends AppCompatActivity {
         btnExerciseA.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(),
                     Food.class);
+            startActivity(intent);
+        });
+
+        btnExerciseB.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(),
+                    Question.class);
             startActivity(intent);
         });
     }
