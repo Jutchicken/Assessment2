@@ -41,6 +41,18 @@
             android:name="Project.Register"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.A_MainPage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.P_MainPage"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.A_CreateTournament"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
