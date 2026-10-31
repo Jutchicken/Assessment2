@@ -28,9 +28,17 @@
         <activity
             android:name="ExerciseA.Food"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="ExerciseB.Question"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.Login"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.Register"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
