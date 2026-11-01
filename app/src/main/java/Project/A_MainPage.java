@@ -44,9 +44,9 @@ public class A_MainPage extends AppCompatActivity {
     }
 
     public void btnViewResults(View view) {
-        Toast.makeText(getApplicationContext(),
-                "View Results",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(),
+                A_ViewResults.class);
+        startActivity(intent);
     }
 
     public void btnLogout(View view) {

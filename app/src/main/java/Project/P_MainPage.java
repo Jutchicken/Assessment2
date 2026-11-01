@@ -3,6 +3,7 @@ package Project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -32,28 +33,28 @@ public class P_MainPage extends AppCompatActivity {
     }
 
     public void btnViewTournaments(View view) {
-        Toast.makeText(getApplicationContext(),
-                "View Tournaments",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(),
+                P_ViewTournaments.class
+        );
+        startActivity(intent);
     }
 
     public void btnMyResults(View view) {
-        Toast.makeText(getApplicationContext(),
-                "My Results",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(),
+                P_MyResults.class);
+        startActivity(intent);
     }
 
     public void btnLeaderboard(View view) {
-        Toast.makeText(getApplicationContext(),
-                "Leaderboard",
-                Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(),
+                P_Leaderboard.class);
+        startActivity(intent);
     }
 
     public void btnLogout(View view) {
         mAuth.signOut();
         Intent intent = new Intent(getApplicationContext(),
-            Login.class
-        );
+            Login.class);
         startActivity(intent);
         finish();
     }

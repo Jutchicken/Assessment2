@@ -57,6 +57,26 @@
             android:name="Project.A_ManageTournament"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.A_ViewResults"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.P_ViewTournaments"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.P_Quiz"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.P_MyResults"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="Project.P_Leaderboard"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

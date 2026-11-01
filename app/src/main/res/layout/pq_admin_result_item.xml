@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_marginBottom="8dp" android:background="#EEEEEE">
+    <TextView android:id="@+id/tvAdminResultPlayer" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Player Name" android:textSize="18sp"
+        android:textStyle="bold" android:textColor="#000000" />
+    <TextView android:id="@+id/tvAdminResultScore" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Score: 8 / 10" android:textSize="16sp"
+        android:layout_marginTop="6dp" />
+    <TextView android:id="@+id/tvAdminResultDate" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Completed: 01/11/2026 19:00"
+        android:layout_marginTop="6dp" />
+</LinearLayout>

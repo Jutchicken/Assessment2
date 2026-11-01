@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tournament Title"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvResultScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 8 / 10 (80%)"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvResultDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01/11/2026 19:00"/>
+
+</LinearLayout>

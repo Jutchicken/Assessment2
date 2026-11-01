@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Tournament Results" android:textSize="26sp" android:textStyle="bold"
+        android:gravity="center" android:layout_marginBottom="16dp" />
+    <Spinner android:id="@+id/spAdminTournament" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="16dp" />
+    <TextView android:id="@+id/tvAdminParticipants" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Participants: 0" android:textSize="17sp" android:padding="8dp" />
+    <TextView android:id="@+id/tvAdminAverage" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Average Score: 0%" android:textSize="17sp"
+        android:padding="8dp" android:layout_marginBottom="8dp" />
+    <TextView android:id="@+id/tvAdminResultsStatus" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Loading..." android:gravity="center" android:padding="12dp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvAdminResults"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <Button android:id="@+id/btnBackAdminResults" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Back" />
+</LinearLayout>
